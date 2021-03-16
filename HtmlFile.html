@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<style>
+form {display: inline;}
+img{ border: 3px solid black;}
+</style>
+<SCRIPT>
+		function D()
+		{
+		B = document.getElementById('pic')
+		B2 = document.getElementById('text')
+		B.src = "Dog.png"
+		B2.innerHTML = "Собака"
+		}
+		function C()
+		{
+		B = document.getElementById('pic')
+		B2 = document.getElementById('text')
+		B.src = "Cat.jpg"
+		B2.innerHTML = "Кот"
+		}
+		function H()
+		{
+		B = document.getElementById('pic')
+		B2 = document.getElementById('text')
+		B.src = "Hamster.jpg"
+		B2.innerHTML = "Хомяк"
+		}
+			
+</SCRIPT>
+</HEAD>
+<BODY>
+	<FORM>
+		<H2 id='text'>Собака</H2>
+		<img height="400" width="400" src="Dog.png" name="pic" id='pic'>
+		<br><br>
+		<input type="button" style ="height: 60px; width: 130px" value='Собака' onclick="D()"/>
+		<input type="button" style ="height: 60px; width: 130px" value='Кот' onclick="C()"/>
+		<input type="button" style ="height: 60px; width: 130px" value='Хомяк' onclick="H()"/>
+	</FORM>
+</BODY>
+</HTML>
